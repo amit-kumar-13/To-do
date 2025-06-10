@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TO DO APP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>To-Do-Task <img src="images/icon.png" /></h2>
+      <div class="actions">
+        <button id="add-btn">Add Task</button>
+        <button id="theme-toggle">Toggle Theme</button>
+      </div>
+    </div>
+
+    <div id="task-modal" class="modal">
+      <div class="modal-content">
+        <h3>Add New Task</h3>
+        <input type="text" id="task-input" placeholder="Enter task..." />
+        <input type="date" id="task-date" />
+        <select id="task-priority">
+          <option value="high">Most Important</option>
+          <option value="medium">Important</option>
+          <option value="low">Least Important</option>
+        </select>
+        <button id="confirm-btn">Confirm</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul id="task"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
